@@ -1,0 +1,1 @@
+json.extract! @order, :id, :customer_id, :distributor_id, :item, :item_url, :quantity, :price, :deposit, :paid, :status, :availability, :customer_order_on, :ordered_from_distributor_on, :arrived_in_store_on, :created_at, :updated_at

@@ -1,0 +1,44 @@
+./bin/rails generate scaffold distributor \
+  name:string \
+  abn:integer \
+  email:string \
+  phone:integer \
+  website:string \
+  address_line1:string \
+  address_line2:string \
+  suburb:string \
+  state:string \
+  post_code:integer \
+
+./bin/rails generate scaffold customer \
+  name:string \
+  credit_limit:decimal \
+  email:string \
+  mobile_phone:string \
+  home_phone:string \
+  address_line1:string \
+  address_line2:string \
+  suburb:string \
+  state:string \
+  post_code:integer \
+
+./bin/rails generate scaffold order \
+  customer_id:integer \
+  distributor_id:integer \
+  item:string \
+  item_url:string \
+  quantity:integer \
+  price:decimal\
+  deposit:decimal \
+  paid:boolean \
+  status:string \
+  availability:string \
+  customer_order_on:datetime \
+  ordered_from_distributor_on:datetime \
+  arrived_in_store_on:datetime \
+
+./bin/rails generate scaffold customer_contact \
+  customer_id:integer \
+  contact_method:string \
+  date_contacted:datetime \
+  notes:text \

@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 1
+  distributor_id: 1
+  item: MyString
+  item_url: MyString
+  quantity: 1
+  price: 9.99
+  deposit: 9.99
+  paid: false
+  status: MyString
+  availability: MyString
+  customer_order_on: 2016-01-29 18:58:23
+  ordered_from_distributor_on: 2016-01-29 18:58:23
+  arrived_in_store_on: 2016-01-29 18:58:23
+
+two:
+  customer_id: 1
+  distributor_id: 1
+  item: MyString
+  item_url: MyString
+  quantity: 1
+  price: 9.99
+  deposit: 9.99
+  paid: false
+  status: MyString
+  availability: MyString
+  customer_order_on: 2016-01-29 18:58:23
+  ordered_from_distributor_on: 2016-01-29 18:58:23
+  arrived_in_store_on: 2016-01-29 18:58:23

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Distributors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Abn</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Website</th>
+      <th>Address line1</th>
+      <th>Address line2</th>
+      <th>Suburb</th>
+      <th>State</th>
+      <th>Post code</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @distributors.each do |distributor| %>
+      <tr>
+        <td><%= distributor.name %></td>
+        <td><%= distributor.abn %></td>
+        <td><%= distributor.email %></td>
+        <td><%= distributor.phone %></td>
+        <td><%= distributor.website %></td>
+        <td><%= distributor.address_line1 %></td>
+        <td><%= distributor.address_line2 %></td>
+        <td><%= distributor.suburb %></td>
+        <td><%= distributor.state %></td>
+        <td><%= distributor.post_code %></td>
+        <td><%= link_to 'Show', distributor %></td>
+        <td><%= link_to 'Edit', edit_distributor_path(distributor) %></td>
+        <td><%= link_to 'Destroy', distributor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Distributor', new_distributor_path %>
