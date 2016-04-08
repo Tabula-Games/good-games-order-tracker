@@ -4,6 +4,7 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
   def index
+    puts ENV.to_json
     @orders = Order.all
   end
 
