@@ -20,7 +20,7 @@ gem 'jquery-rails'
 # Foundation for styling
 gem 'foundation-rails'
 
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 gem 'puma'
 # Use ActiveModel has_secure_password
