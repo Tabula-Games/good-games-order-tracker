@@ -38,9 +38,9 @@
         <td><%= order.customer_order_on %></td>
         <td><%= order.ordered_from_distributor_on %></td>
         <td><%= order.arrived_in_store_on %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', order, class: "button" %></td>
+        <td><%= link_to 'Update', edit_order_path(order), class: "button" %></td>
+        <td><%= link_to 'Delete', order, class: "button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -48,4 +48,4 @@
 
 <br>
 
-<%= link_to 'New Order', new_order_path %>
+<%= link_to 'New Order', new_order_path, class: "button" %>

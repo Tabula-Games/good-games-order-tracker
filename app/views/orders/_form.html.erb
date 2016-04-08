@@ -71,20 +71,28 @@
         <%= f.text_field :availability %>
       </div>
     </div>
-    <div class="field">
-      <%= f.label :customer_order_on %><br>
-      <%= f.datetime_select :customer_order_on %>
+    <div class="small-4 columns">
+      <div class="field">
+        <%= f.label :customer_order_on %><br>
+        <%= f.date_select :customer_order_on %>
+      </div>
     </div>
-    <div class="field">
-      <%= f.label :ordered_from_distributor_on %><br>
-      <%= f.datetime_select :ordered_from_distributor_on %>
+    <div class="small-4 columns">
+      <div class="field">
+        <%= f.label :ordered_from_distributor_on %><br>
+        <%= f.date_select :ordered_from_distributor_on %>
+      </div>
     </div>
-    <div class="field">
-      <%= f.label :arrived_in_store_on %><br>
-      <%= f.datetime_select :arrived_in_store_on %>
+    <div class="small-4 columns">
+      <div class="field">
+        <%= f.label :arrived_in_store_on %><br>
+        <%= f.date_select :arrived_in_store_on %>
+      </div>
     </div>
-    <div class="actions">
-      <%= f.submit %>
+    <div class="small-12 columns">
+      <div class="actions input-group-button left">
+        <%= f.submit class: :button %>
+      </div>
     </div>
   </div>
 <% end %>
